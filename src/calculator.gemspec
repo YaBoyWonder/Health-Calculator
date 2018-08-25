@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require '../health_calculator/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "health_calculator"
+  spec.name          = "calc"
   spec.version       = HealthCalculator::VERSION
   spec.summary       = %q{HealthCaluclator : calucalate your Health Data}
   spec.license       = "AGPL-3.0"
