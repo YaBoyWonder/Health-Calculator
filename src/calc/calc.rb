@@ -1,7 +1,10 @@
 module Calc
+
  class HLTH  
 
-	   def pound_to_kilo_converter(weight_lb)
+ #FUNCTIONS <>      
+    
+       def pound_to_kilo_converter(weight_lb)
 	      @weight_kg = ( weight_lb * (0.452873)  )
 	   	  print @weight_kg      
 	   end
@@ -26,6 +29,12 @@ module Calc
      end
   
   
+     def hlth_prime_kg(hlth_value)
+	    if hlth_value > 25
+	    @hlth_prime_kg = hlth_value / 25
+		end	
+      end
+      
   
   
     end
