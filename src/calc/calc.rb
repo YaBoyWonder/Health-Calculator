@@ -35,6 +35,14 @@ module Calc
 		end	
       end
       
+
+      def rating_lb(bmi_value)
+        result = case bmi_value
+           when 0..15 then "Very Severe Underweight"
+
+           else "Invalid Score"
+         end
+   end
   
   
     end
