@@ -29,21 +29,30 @@ module Calc
      end
   
   
-     def hlth_prime_kg(hlth_value)
+    def hlth_prime_kg(hlth_value)
 	    if hlth_value > 25
 	    @hlth_prime_kg = hlth_value / 25
-		end	
-      end
+	   	end	
+    end
       
 
-      def rating_lb(bmi_value)
+    def rating_lb(bmi_value)
         result = case bmi_value
            when 0..15 then "Very Severe Underweight"
 
            else "Invalid Score"
          end
-   end
+    end
   
+
+    def rating_kg(bmi_value)
+      result = case bmi_value
+        when 0..15 then "Very Severe Underweight"
+        when 15..16 then "Severely underweight"
+        else "Invalid Score"
+      end
+    end
+
   
     end
 end
